@@ -1,27 +1,8 @@
 # Elevator Controls
 
-## What is this?
-This is a code challenge to be able to get a feel for how candidates for employment write and organize code. This is not a test, though code should be functional.
+# Road map to create app
+-learn slim framework
+-create function to randomly generate a car if no cars are in use
+-create way to have the closest car go to the first floor when cars are in use.
 
-## So, what am I expected to do?
-
-The goal of this challenge is to code an elevator system. The expectation is to utilize PHP Object Oriented best practices to create a functional REST-ish API that can cause elevator cars to react to calls to different floors in an efficient manner. SlimPHP has been provided as a framework, and persistance layer, or additional libraries, are up to the digression of the developer.
-
-## What are the requirements?
-
- - Be able to configure the number of Elevator Cars via the `ELEVATOR_CAR_COUNT` environmental variable (.env)
- - Be able to configure the number of Elevator Cars via the `FLOOR_COUNT` environmental variable (.env)
- - Set `ELEVATOR_CAR_COUNT` to 3 and `FLOOR_COUNT` to 6
- - Initiate a Call from floor 2 to go up. Which car responds?
- - Initiate a call from floor 5 to go down. Which car responds?
- - Initiate a call from floor 6 to go up. What happens?
- - With cars on 3,5, and 6 which car responds to a new call on the first floor?
-
-## How should I do this?
-
-- Clone this repository to your local environment
-- Set up a new remote to add from repository service of choice (Gitlab, Github, Bitbucket, etc..)
-- Write tests
-- Write code
-- Test Code
-- When complete, Invite the hiring manager to a PR in the personal remote 
+-I know this was not the best approach to take to get this accomplished.  A few things that hampered this was the lack of knowledge of Slim.  I had to take a crash course to learn how to use it.  I was having a very hard time including a way to get the environmental variables, so I had to hard code them where they were needed.  Also, trying to use a separate template file to allow the user to use fields to change what floor they were going to, up or down, and which floor they were on was not working for me as well.  Had I used regular php files and not slim, I could have included all the markup in one spot and used a get command to get the info for the api.  Possibly running it through a js script to act when the button was clicked and then updated the api.
